@@ -5,3 +5,5 @@ nshgrb_lottery
 
 [オリジナルの課題](https://gist.github.com/JunichiIto/5427712)
 
+
+[リポジトリ管理前の解答](https://gist.github.com/springaki/5432350)

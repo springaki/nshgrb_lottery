@@ -1,4 +1,4 @@
-nshgrb_lottery
+nshgrb_lottery  [![Build Status](https://travis-ci.org/springaki/nshgrb_lottery.png)](https://travis-ci.org/springaki/nshgrb_lottery)
 ==============
 
 西脇.rb & 東灘.rb で取り上げた課題

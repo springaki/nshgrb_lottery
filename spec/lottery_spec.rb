@@ -37,11 +37,14 @@ describe Lottery do
 			@lottery.add("Bill", 5)
 			@lottery.add("Woz", 2)
 			@lottery.add("Ken", 10)
+			
+			@winners = []
+			1000.times { @winners += @lottery.winners }
 		end
 
 		describe 'when add 5 people' do
 			it 'John is 1/20 hit' do
-				(@lottery.count("John") / @lottery.size.to_f).should be_within(0.03).of(0.07)
+				(@winners.count("John") / @winners.size.to_f).should be_within(1/18.0).of(1/22.0)
 			end
 		end
 	end

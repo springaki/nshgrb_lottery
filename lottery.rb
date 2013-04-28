@@ -11,7 +11,7 @@ class Lottery
   def winners
     winners = []
     @winners.times {
-      winners << @ary.at(rand(@ary.size))
+      winners << @ary.at(rand(@ary.size)) if @ary.size > 0
     }
     winners
   end

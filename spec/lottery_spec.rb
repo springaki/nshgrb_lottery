@@ -20,6 +20,13 @@ describe Lottery do
 		it '#winners is []' do
 			@lottery.winners.should eq []
 		end
+
+		describe 'when add' do
+			it '#winners is 1 people' do
+				@lottery.add('paul', 1)
+				@lottery.winners.should eq ['paul']
+			end
+		end
 	end
 end
 

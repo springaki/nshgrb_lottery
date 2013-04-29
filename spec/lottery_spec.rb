@@ -44,7 +44,19 @@ describe Lottery do
 
 		describe 'when add 5 people' do
 			it 'John is 1/20 hit' do
-				(@winners.count("John") / @winners.size.to_f).should be_within(1/18.0).of(1/22.0)
+				(@winners.count("John") / @winners.size.to_f).should be_within(0.05).of(1/20.0)
+			end
+
+			it 'Tom is 2/20 hit' do
+				(@winners.count("Tom") / @winners.size.to_f).should be_within(0.05).of(2/20.0)
+			end
+
+			it 'Tom is 5/20 hit' do
+				(@winners.count("Bill") / @winners.size.to_f).should be_within(0.05).of(5/20.0)
+			end
+
+			it 'Tom is 10/20 hit' do
+				(@winners.count("Ken") / @winners.size.to_f).should be_within(0.05).of(10/20.0)
 			end
 		end
 	end
